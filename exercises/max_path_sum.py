@@ -2,7 +2,7 @@ def max_path_sum(grid):
     # memo to store computed result 
     memo = {} 
 
-    return _max_path_sum(grid, 0, 0, memo) 
+    return _max_path_sum(grid, 0, 0, memo)
 
 def _max_path_sum(grid, r, c, memo):
     # return value of memo in pos 
@@ -23,7 +23,7 @@ def _max_path_sum(grid, r, c, memo):
 
     # return max from left_sum and right_sum
     memo[(r, c)] = grid[r][c] + max(left_sum, right_sum)
-    return memo[(r, c)] 
+    return memo[(r, c)]
 
 if __name__ == "__main__":
     grid = [
